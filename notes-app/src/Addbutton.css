@@ -1,0 +1,140 @@
+@import "./App.css";
+.addButton{
+    /* border-radius: 15rem;
+    background-color: blue; */
+    background-color: #478a8a;
+    border-radius: 50px;
+    width: 60px;
+    position:relative;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.addButton:hover{
+    background-color: rgba(0, 0, 255, 0.231);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: min-content; 
+    grid-gap: 20px; */
+    /* Adjust the row height based on content */
+  }
+.TextInput{
+
+}
+/* .title-text-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 200px;
+    margin: auto ;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    overflow: hidden;
+
+  }
+   */
+  .title-text-pair input,
+  .title-text-pair textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .title-text-pair textarea {
+    resize: vertical;
+  }
+  /* input{
+    border-width: 100px;
+  } */
+  /* .titleInput{
+    border-style: dotted;
+    border: red
+  } */
+  @media (max-width: 600px) {
+    .title-text-pair {
+      grid-template-columns: 1fr;
+    }
+  }
+  .title-text-pair input[name="title"],
+  .title-text-pair input[name="note"]
+   {
+    /* border: none;
+    outline: none;
+    word-wrap: break-word; */
+    border: none;
+  outline: none;
+  width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+
+  .title-text-pair {
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+    gap: 0px;
+    border: 0.5px solid var(--strongwhite);
+    border-radius: 5px;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    overflow: hidden;
+    max-height: 600px;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .title-text-pair:hover .button-wrapper {
+    opacity: 1;
+  }
+  
+  .deleteButton,
+  .saveButton {
+    padding: 5px 10px;
+    background-color: #ff0000; /* Delete button background color */
+    color: #fff; /* Delete button text color */
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .saveButton {
+    background-color: #007bff; /* Save button background color */
+  }
+  @media (min-width: 601px) {
+    .container {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    .title-text-pair {
+      width: calc(25% - 20px); /* Adjust width to accommodate 4 pairs */
+    }
+  }
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Switch to a single column layout on smaller screens */
+    }
+  }
+  
+     /* Use flex property to allow subsequent title-text pairs to grow horizontally */

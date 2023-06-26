@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Roboto:ital,wght@0,100;1,100&display=swap');
+:root{
+    --darkgrey: rgb(24, 25, 27);
+    --white: rgb(77,80,84);
+    --strongwhite: rgb(189,190,195);
+    --iconwhite: rgb(218,218,219);
+    --brightred: rgb(144,44,62);
+}
+*{
+    background-color: rgb(24, 25, 27);
+    color: var(--strongwhite);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito',sans-serif;
+    box-sizing: border-box;
+
+}
